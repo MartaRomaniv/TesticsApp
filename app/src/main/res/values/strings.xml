@@ -1,0 +1,917 @@
+<resources>
+    <string name="app_name">Testics</string>
+    <string name="mark_template">%d/%d</string>
+
+
+    <!-- res for test Python -->
+    <string name="python">Python</string>
+    <string name="python_question1">
+        What is output of this code?\n\ndef fun1(x):\n  return x + 1\ndef fun2(x, y=2):\n  return x + y\narr = [fun1, fun2]\nn = 0\nfor f in arr:\n  n += f(n)\nprint(n)
+    </string>
+
+    <string name="python_question2">
+        What is output of this code?\n\ndef generate():\nfor x in range(5):\n  yield x\nprint(list(generate()))
+    </string>
+
+    <string name="python_question3">
+        What is output of this code?\n\ndef func(n):\n  y = \'+\'.join(str(x) for x in range(n))\n  return eval(y)\nprint(func(7))
+    </string>
+
+    <string name="python_question4">
+        What is output of this code?\n\na = [1,2]\nprint(a,*a)
+    </string>
+
+    <string name="python_question5">
+        What is output of this code?\n\nquote = "Holy"\nprint(quote.swapcase())
+    </string>
+
+    <string name="python_question6">
+        What is output of this code?\n\nlist = []\nfor i in range(5)[::-1]:\n  list.append(i)\nprint(list[1])
+    </string>
+
+    <string name="python_question7">
+        Which attribute from below is declared as strongly private?\n\n
+    </string>
+
+    <string name="python_question8">
+        What is output of this code?\n\nclass Friends:\n  def __init__(self,nickname):\n    self.nickname = nickname\nanonymus1 = Friends("Zorro")\nanonymus2 = Friends("Borg")\nanonymus3 = Friends("Xbox")
+print(anonymus2.nickname)
+    </string>
+
+    <string name="python_question9">
+        A decorator is a
+    </string>
+
+    <string name="python_question10">
+        What is the highest value that could be printed?\n\nimport random\nx = random.randint(0,120) % 55\nprint (x)
+    </string>
+
+    <string name="python_correct1">4</string>
+
+    <string name="python_correct2">[0,1,2,3,4]</string>
+
+    <string name="python_correct3">21</string>
+
+    <string name="python_correct4">[1,2] 1 2</string>
+
+    <string name="python_correct5">hOLY</string>
+
+    <string name="python_correct6">3</string>
+
+    <string name="python_correct7">__geruliv = 5</string>
+
+    <string name="python_correct8">Borg</string>
+
+    <string name="python_correct9">function that modifies another\nfunction or method</string>
+
+    <string name="python_correct10">54</string>
+
+    <string-array name="python_answers1">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="python_answers2">
+        <item>[4]</item>
+        <item>[0,1,2,3,4]</item>
+        <item>Error</item>
+        <item>[]</item>
+    </string-array>
+
+    <string-array name="python_answers3">
+        <item>21</item>
+        <item>7</item>
+        <item>28</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="python_answers4">
+        <item>1,2 [1,2]</item>
+        <item>[1,2,1,2]</item>
+        <item>[1,2] 1 2</item>
+        <item>[1,4]</item>
+    </string-array>
+
+    <string-array name="python_answers5">
+        <item>HOLY</item>
+        <item>hOLY</item>
+        <item>Holy</item>
+        <item>holy</item>
+    </string-array>
+
+    <string-array name="python_answers6">
+        <item>3</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="python_answers7">
+        <item>_geruliv = 5</item>
+        <item>__geruliv = 5</item>
+        <item>private: geruliv = 5</item>
+    </string-array>
+
+    <string-array name="python_answers8">
+        <item>Zorro</item>
+        <item>Xbox</item>
+        <item>Error</item>
+        <item>Borg</item>
+    </string-array>
+
+    <string-array name="python_answers9">
+        <item>library.</item>
+        <item>function that modifies another\nfunction or method</item>
+        <item>method that overrides a function</item>
+    </string-array>
+
+    <string-array name="python_answers10">
+        <item>54</item>
+        <item>55</item>
+        <item>119</item>
+        <item>120</item>
+    </string-array>
+
+    <!-- res for test Java -->
+    <string name="java">Java</string>
+
+
+    <!-- res for test Capitals -->
+    <string name="capitals">Capitals</string>
+
+    <string name="capitals_question1">
+        Indicate the capital\nAfghanistan
+    </string>
+
+    <string name="capitals_correct1">Kabul</string>
+
+    <string name="capitals_question2">
+        Indicate the capital\nArgentina
+    </string>
+
+    <string name="capitals_correct2">Buenos Aires</string>
+
+    <string name="capitals_question3">
+        Indicate the capital\nArmenia
+    </string>
+
+    <string name="capitals_correct3">Yerevan</string>
+
+    <string name="capitals_question4">
+        Indicate the capital\nAustralia
+    </string>
+
+    <string name="capitals_correct4">Canberra</string>
+
+    <string name="capitals_question5">
+        Indicate the capital\nAustria
+    </string>
+
+    <string name="capitals_correct5">Vienna</string>
+
+    <string name="capitals_question6">
+        Indicate the capital\nAzerbaijan
+    </string>
+
+    <string name="capitals_correct6">Baku</string>
+
+    <string name="capitals_question7">
+        Indicate the capital\nBelgium
+    </string>
+
+    <string name="capitals_correct7">Brussels</string>
+
+    <string name="capitals_question8">
+        Indicate the capital\nBosnia and Herzegovina
+    </string>
+
+    <string name="capitals_correct8">Sarajevo</string>
+
+    <string name="capitals_question9">
+        Indicate the capital\nBulgaria
+    </string>
+
+    <string name="capitals_correct9">Sofia</string>
+
+    <string name="capitals_question10">
+        Indicate the capital\nCambodia
+    </string>
+
+    <string name="capitals_correct10">Phnom Penh</string>
+
+    <string name="capitals_question12">
+        Indicate the capital\nChile
+    </string>
+
+    <string name="capitals_correct12">Santiago</string>
+
+    <string name="capitals_question13">
+        Indicate the capital\nChina
+    </string>
+
+    <string name="capitals_correct13">Beijing</string>
+
+    <string name="capitals_question14">
+        Indicate the capital\nCroatia
+    </string>
+
+    <string name="capitals_correct14">Zagreb</string>
+
+    <string name="capitals_question15">
+        Indicate the capital\nCuba
+    </string>
+
+    <string name="capitals_correct15">Havana</string>
+
+    <string name="capitals_question16">
+        Indicate the capital\nDenmark
+    </string>
+
+    <string name="capitals_correct16">Copenhagen</string>
+
+    <string name="capitals_question17">
+        Indicate the capital\nEgypt
+    </string>
+
+    <string name="capitals_correct17">Cairo</string>
+
+    <string name="capitals_question18">
+        Indicate the capital\nGeorgia
+    </string>
+
+    <string name="capitals_correct18">Tbilisi</string>
+
+    <string name="capitals_question19">
+        Indicate the capital\nHaiti
+    </string>
+
+    <string name="capitals_correct19">Port-au-Prince</string>
+
+    <string name="capitals_question20">
+        Indicate the capital\nIran
+    </string>
+
+    <string name="capitals_correct20">Tehran</string>
+
+    <string name="capitals_question21">
+        Indicate the capital\nIraq
+    </string>
+
+    <string name="capitals_correct21">Baghdad</string>
+
+    <string name="capitals_question22">
+        Indicate the capital\nJapan
+    </string>
+
+    <string name="capitals_correct22">Tokyo</string>
+
+    <string name="capitals_question23">
+        Indicate the capital\nKazakhstan
+    </string>
+
+    <string name="capitals_correct23">Astana</string>
+
+    <string name="capitals_question24">
+        Indicate the capital\nKyrgyzstan
+    </string>
+
+    <string name="capitals_correct24">Bishkek</string>
+
+    <string name="capitals_question25">
+        Indicate the capital\nLatvia
+    </string>
+
+    <string name="capitals_correct25">Riga</string>
+
+    <string name="capitals_question26">
+        Indicate the capital\nLibya
+    </string>
+
+    <string name="capitals_correct26">Tripoli</string>
+
+    <string name="capitals_question27">
+        Indicate the capital\nLiechtenstein
+    </string>
+
+    <string name="capitals_correct27">Vaduz</string>
+
+    <string name="capitals_question28">
+        Indicate the capital\nMacedonia
+    </string>
+
+    <string name="capitals_correct28">Skopje</string>
+
+    <string name="capitals_question29">
+        Indicate the capital\nMalaysia
+    </string>
+
+    <string name="capitals_correct29">Kuala Lumpur</string>
+
+    <string name="capitals_question30">
+        Indicate the capital\nMalta
+    </string>
+
+    <string name="capitals_correct30">Valletta</string>
+
+    <string name="capitals_question31">
+        Indicate the capital\nMauritius
+    </string>
+
+    <string name="capitals_correct31">Valletta</string>
+
+    <string name="capitals_question32">
+        Indicate the capital\nMoldova
+    </string>
+
+    <string name="capitals_correct32">Chisinau</string>
+
+    <string name="capitals_question33">
+        Indicate the capital\nMontenegro
+    </string>
+
+    <string name="capitals_correct33">Podgorica</string>
+
+    <string name="capitals_question34">
+        Indicate the capital\nNew Zealand
+    </string>
+
+    <string name="capitals_correct34">Wellington</string>
+
+    <string name="capitals_question35">
+        Indicate the capital\nOman
+    </string>
+
+    <string name="capitals_correct35">Muscat</string>
+
+    <string name="capitals_question36">
+        Indicate the capital\nPapua New Guinea
+    </string>
+
+    <string name="capitals_correct36">Port Moresby</string>
+
+    <string name="capitals_question37">
+        Indicate the capital\nSaudi Arabia
+    </string>
+
+    <string name="capitals_correct37">Riyadh</string>
+
+    <string name="capitals_question38">
+        Indicate the capital\nSerbia
+    </string>
+
+    <string name="capitals_correct38">Belgrade</string>
+
+    <string name="capitals_question39">
+        Indicate the capital\nSyria
+    </string>
+
+    <string name="capitals_correct39">Damascus</string>
+
+    <string name="capitals_question40">
+        Indicate the capital\nVietnam
+    </string>
+
+    <string name="capitals_correct40">Hanoi</string>
+
+    <string name="capitals_question11">
+        Indicate the capital\nSweden
+    </string>
+
+    <string name="capitals_correct11">Stockholm</string>
+
+
+    <string-array name="capital_question">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cabo Verde</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Republic of the Congo</item>
+        <item>Costa Rica</item>
+        <item>Cote d'Ivoire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kosovo</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macedonia (FYROM)</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar (Burma)</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>North Korea</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Palestine</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Qatar</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome and Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States of America</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string-array name="capital_answer">
+        <item>Kabul</item>
+        <item>Tirana</item>
+        <item>Algiers</item>
+        <item>Andorra la Vella</item>
+        <item>Luanda</item>
+        <item>Saint John's</item>
+        <item>Buenos Aires</item>
+        <item>Yerevan</item>
+        <item>Canberra</item>
+        <item>Vienna</item>
+        <item>Baku</item>
+        <item>Nassau</item>
+        <item>Manama</item>
+        <item>Dhaka</item>
+        <item>Bridgetown</item>
+        <item>Minsk</item>
+        <item>Brussels</item>
+        <item>Belmopan</item>
+        <item>Porto-Novo</item>
+        <item>Thimphu</item>
+        <item>Sucre</item>
+        <item>Sarajevo</item>
+        <item>Gaborone</item>
+        <item>Brasilia</item>
+        <item>Bandar Seri Begawan</item>
+        <item>Sofia</item>
+        <item>Ouagadougou</item>
+        <item>Bujumbura</item>
+        <item>Praia</item>
+        <item>Phnom Penh</item>
+        <item>Yaounde</item>
+        <item>Ottawa</item>
+        <item>Bangui</item>
+        <item>N'Djamena</item>
+        <item>Santiago</item>
+        <item>Beijing</item>
+        <item>Bogotá</item>
+        <item>Moroni</item>
+        <item>Kinshasa</item>
+        <item>Brazzaville</item>
+        <item>San Jose</item>
+        <item>Yamoussoukro</item>
+        <item>Zagreb</item>
+        <item>Havana</item>
+        <item>Nicosia</item>
+        <item>Prague</item>
+        <item>Copenhagen</item>
+        <item>Djibouti</item>
+        <item>Roseau</item>
+        <item>Santo Domingo</item>
+        <item>Quito</item>
+        <item>Cairo</item>
+        <item>San Salvador</item>
+        <item>Malabo</item>
+        <item>Asmara</item>
+        <item>Tallinn</item>
+        <item>Addis Ababa</item>
+        <item>Suva</item>
+        <item>Helsinki</item>
+        <item>Paris</item>
+        <item>Libreville</item>
+        <item>Banjul</item>
+        <item>Tbilisi</item>
+        <item>Berlin</item>
+        <item>Accra</item>
+        <item>Athens</item>
+        <item>Saint George's</item>
+        <item>Guatemala City</item>
+        <item>Conakry</item>
+        <item>Bissau</item>
+        <item>Georgetown</item>
+        <item>Port-au-Prince</item>
+        <item>Tegucigalpa</item>
+        <item>Budapest</item>
+        <item>Reykjavik</item>
+        <item>New Delhi</item>
+        <item>Jakarta</item>
+        <item>Tehran</item>
+        <item>Baghdad</item>
+        <item>Dublin</item>
+        <item>Jerusalem</item>
+        <item>Rome</item>
+        <item>Kingston</item>
+        <item>Tokyo</item>
+        <item>Amman</item>
+        <item>Astana</item>
+        <item>Nairobi</item>
+        <item>Tarawa</item>
+        <item>Pristina</item>
+        <item>Kuwait City</item>
+        <item>Bishkek</item>
+        <item>Vientiane</item>
+        <item>Riga</item>
+        <item>Beirut</item>
+        <item>Maseru</item>
+        <item>Monrovia</item>
+        <item>Tripoli</item>
+        <item>Vaduz</item>
+        <item>Vilnius</item>
+        <item>Luxembourg</item>
+        <item>Skopje</item>
+        <item>Antananarivo</item>
+        <item>Lilongwe</item>
+        <item>Kuala Lumpur</item>
+        <item>Male</item>
+        <item>Bamako</item>
+        <item>Valletta</item>
+        <item>Majuro</item>
+        <item>Nouakchott</item>
+        <item>Port Louis</item>
+        <item>Mexico City</item>
+        <item>Palikir</item>
+        <item>Chisinau</item>
+        <item>Monaco</item>
+        <item>Ulaanbaatar</item>
+        <item>Podgorica</item>
+        <item>Rabat</item>
+        <item>Maputo</item>
+        <item>Naypyidaw</item>
+        <item>Windhoek</item>
+        <item>Yaren District</item>
+        <item>Kathmandu</item>
+        <item>Amsterdam</item>
+        <item>Wellington</item>
+        <item>Managua</item>
+        <item>Niamey</item>
+        <item>Abuja</item>
+        <item>Pyongyang</item>
+        <item>Oslo</item>
+        <item>Muscat</item>
+        <item>Islamabad</item>
+        <item>Ngerulmud</item>
+        <item>Jerusalem (East)</item>
+        <item>Panama City</item>
+        <item>Port Moresby</item>
+        <item>Asunción</item>
+        <item>Lima</item>
+        <item>Manila</item>
+        <item>Warsaw</item>
+        <item>Lisbon</item>
+        <item>Doha</item>
+        <item>Bucharest</item>
+        <item>Moscow</item>
+        <item>Kigali</item>
+        <item>Basseterre</item>
+        <item>Castries</item>
+        <item>Kingstown</item>
+        <item>Apia</item>
+        <item>San Marino</item>
+        <item>São Tomé</item>
+        <item>Riyadh</item>
+        <item>Dakar</item>
+        <item>Belgrade</item>
+        <item>Victoria</item>
+        <item>Freetown</item>
+        <item>Singapore</item>
+        <item>Bratislava</item>
+        <item>Ljubljana</item>
+        <item>Honiara</item>
+        <item>Mogadishu</item>
+        <item>Cape Town</item>
+        <item>Seoul</item>
+        <item>Juba</item>
+        <item>Madrid</item>
+        <item>Sri Jayawardenepura Kotte</item>
+        <item>Khartoum</item>
+        <item>Paramaribo</item>
+        <item>Mbabane</item>
+        <item>Stockholm</item>
+        <item>Bern</item>
+        <item>Damascus</item>
+        <item>Taipei</item>
+        <item>Dushanbe</item>
+        <item>Dodoma</item>
+        <item>Bangkok</item>
+        <item>Dili</item>
+        <item>Lomé</item>
+        <item>Nukuʻalofa</item>
+        <item>Port of Spain</item>
+        <item>Tunis</item>
+        <item>Ankara</item>
+        <item>Ashgabat</item>
+        <item>Funafuti</item>
+        <item>Kampala</item>
+        <item>Kyiv</item>
+        <item>Abu Dhabi</item>
+        <item>London</item>
+        <item>Washington</item>
+        <item>Montevideo</item>
+        <item>Tashkent</item>
+        <item>Port Vila</item>
+        <item>Vatican City</item>
+        <item>Caracas</item>
+        <item>Hanoi</item>
+        <item>Sana'a</item>
+        <item>Lusaka</item>
+        <item>Harare</item>
+    </string-array>
+
+
+    <string name="finish">Finish</string>
+
+
+    <string name="monuments">Monuments</string>
+    <string name="monuments_question1">
+        Where is situated this monument?
+    </string>
+
+    <string name="monuments_question2">
+        Where is situated this monument?
+    </string>
+
+    <string name="monuments_question3">
+        Where is situated this monument?
+    </string>
+
+    <string name="monuments_question4">
+        Where is situated this monument?
+    </string>
+
+    <string name="monuments_question5">
+        Where is situated this monument?
+    </string>
+
+    <string name="monuments_question6">
+        Where is situated this monument?
+    </string>
+
+    <string name="monuments_question7">
+        Where is situated this monument?
+    </string>
+
+    <string name="monuments_question8">
+        Where is situated this monument?
+    </string>
+
+    <string name="monuments_question9">
+       Where is situated this monument?
+    </string>
+
+    <string name="monuments_question10">
+Where is situated this monument?    </string>
+
+    <string name="monuments_correct1">Berlin</string>
+
+    <string name="monuments_correct2">Chicago</string>
+
+    <string name="monuments_correct3">Rome</string>
+
+    <string name="monuments_correct4">Paris</string>
+
+    <string name="monuments_correct5">New York</string>
+
+    <string name="monuments_correct6">Lviv</string>
+
+    <string name="monuments_correct7">Cairo</string>
+
+    <string name="monuments_correct8">Agra</string>
+
+    <string name="monuments_correct9">Washington</string>
+
+    <string name="monuments_correct10">Venice</string>
+
+    <string-array name="monuments_answers1">
+        <item>Berlin</item>
+        <item>Viena</item>
+        <item>Prague</item>
+        <item>Florence</item>
+    </string-array>
+
+    <string-array name="monuments_answers2">
+        <item>Melburn</item>
+        <item>Chicago</item>
+        <item>Amsterdam</item>
+        <item>California</item>
+    </string-array>
+
+    <string-array name="monuments_answers3">
+        <item>Las Vegas</item>
+        <item>Milan</item>
+        <item>Rome</item>
+        <item>Naponi</item>
+    </string-array>
+
+    <string-array name="monuments_answers4">
+        <item>Texas</item>
+        <item>Ottava</item>
+        <item>Dencer</item>
+        <item>Paris</item>
+    </string-array>
+
+    <string-array name="monuments_answers5">
+        <item>Chicago</item>
+        <item>Bologna</item>
+        <item>New York</item>
+        <item>Berlin</item>
+    </string-array>
+
+    <string-array name="monuments_answers6">
+        <item>Lviv</item>
+        <item>Kiyv</item>
+        <item>Odessa</item>
+        <item>Charkiv</item>
+    </string-array>
+
+    <string-array name="monuments_answers7">
+        <item>Cairo</item>
+        <item>Sharm El Sheikh</item>
+        <item>Kongo</item>
+        <item>Hurgada</item>
+    </string-array>
+
+    <string-array name="monuments_answers8">
+        <item>New Deli</item>
+        <item>Oman</item>
+        <item>Agra</item>
+        <item>Mumbai</item>
+    </string-array>
+
+    <string-array name="monuments_answers9">
+        <item>Washington</item>
+        <item>New York</item>
+        <item>Dakota</item>
+        <item>Alasca</item>
+    </string-array>
+
+    <string-array name="monuments_answers10">
+        <item>Florence</item>
+        <item>Toscana</item>
+        <item>Venice</item>
+        <item>Pekin</item>
+    </string-array>
+</resources>
